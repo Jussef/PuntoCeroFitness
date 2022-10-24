@@ -9,6 +9,106 @@
 # General
 --------------------------------------------------------------*/
 
+/*================================================
+Moz Selection
+================================================*/
+:root {
+  --primary-color: #2bbfcf;
+  --dark-color: #111111;
+  --secondary-color: #777777;
+  --grey-color: #eeeeee;
+  --white-color: #ffffff;
+  --body-fonts: "Poppins", sans-serif;
+  --title-fonts: "Montserrat", sans-serif;
+}
+::-moz-selection {
+  text-shadow: none;
+  background: var(--primary-color);
+  color: #fff;
+}
+::-moz-selection {
+  text-shadow: none;
+  background: var(--primary-color);
+  color: #fff;
+}
+::selection {
+  text-shadow: none;
+  background: var(--primary-color);
+  color: #fff;
+}
+
+/*================================================
+General
+================================================*/
+body {
+  background: var(--white-color);
+  font-family: var(--body-fonts);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 2;
+  color: var(--secondary-color);
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--title-fonts);
+  color: var(--dark-color);
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin: 0;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+  letter-spacing: 1px;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+}
+h1 {
+  font-size: 40px;
+  font-style: normal;
+  line-height: 48px;
+}
+h2 {
+  font-size: 36px;
+  font-style: normal;
+  line-height: 44px;
+}
+h3 {
+  font-size: 32px;
+  font-style: normal;
+  line-height: 40px;
+}
+h4 {
+  font-size: 28px;
+  font-style: normal;
+  line-height: 36px;
+}
+h5 {
+  font-size: 24px;
+  font-style: normal;
+  line-height: 32px;
+}
+h6 {
+  font-size: 20px;
+  font-style: normal;
+  line-height: 28px;
+}
+html {
+  overflow: auto;
+}
+/* TODO */
+
 body {
   background: #fff;
   color: #666666;
@@ -621,6 +721,23 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #f7f7f7;
 }
 
+.material-ghost-gymmom {
+  background-image: url("../img/icons/gimnasia-ritmica.png");
+  font-family: "Material Symbols Outlined";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+}
+
 /* Featured Services Section
 --------------------------------*/
 
@@ -664,7 +781,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 0;
 }
 
-.iconoFeatured{
+.iconoFeatured {
   color: #2bbfcf;
   font-size: 50px;
 }
@@ -716,10 +833,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding-top: 8px;
   text-align: center;
   position: absolute;
-  background-color: #2bbfcf;
+  background-color: #fff;
   border-radius: 50%;
   text-align: center;
-  border: 4px solid #fff;
+  border: 4px solid #2bbfcf;
   left: calc(50% - 32px);
   bottom: -30px;
   transition: 0.3s;
@@ -733,11 +850,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .about-col:hover .icon {
-  background-color: #fff;
+  background-color: #2bbfcf;
 }
 
-#about .about-col:hover i {
-  color: #2bbfcf;
+#about .about-col:hover .icon {
+  color: #fff;
 }
 
 #about .about-col h2 {
@@ -809,6 +926,124 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-left: 60px;
   line-height: 24px;
   margin-bottom: 0;
+}
+
+/*================================================
+navigation Tabel
+================================================*/
+.navigation-shortcode-table tr.navigation-shortcode-row th {
+  background-color: var(--grey-color);
+  border: 1px solid var(--white-color);
+  text-align: center;
+  color: var(--secondary-color);
+  padding: 0.25rem 1rem;
+  overflow-wrap: normal;
+  -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+.navigation-shortcode-table tr.navigation-shortcode-row th {
+  text-align: center;
+  font-family: var(--title-fonts);
+  font-weight: 400;
+  padding: 15px 0;
+  padding: 15px !important;
+  text-align: center;
+  border: 1px solid rgb(255 255 255 / 0.2);
+  background: var(--white-color);
+  text-transform: uppercase;
+  color: var(--dark-color);
+  background: #f0f0f0;
+}
+.navigation-shortcode-table tbody td,
+.navigation-shortcode-table.navigation-theme-mode tbody td.event {
+  padding: 15px !important;
+  text-align: center;
+  border: 1px solid rgb(189 182 182 / 20%);
+  background: var(--white-color);
+  color: var(--dark-color);
+}
+.navigation-shortcode-wrapper .navigation-shortcode-table tbody td.navigation-shortcode-hours {
+  padding: 0 1rem !important;
+  white-space: nowrap;
+  width: 1%;
+  vertical-align: middle;
+}
+.navigation-shortcode-wrapper .navigation-shortcode-table.navigation-theme-mode tbody td.event {
+  background-color: var(--white-color);
+}
+.navigation-shortcode-table tbody td {
+  position: relative;
+  border: 1px solid rgb(189 182 182 / 20%);
+  padding: 0;
+  line-height: normal;
+  -webkit-box-sizing: initial;
+  box-sizing: initial;
+}
+.menu-navigation-tabs td {
+  vertical-align: middle;
+}
+.navigation-shortcode-table tbody .navigation-event-container .event-title {
+  display: inline-block;
+  margin: 0.5rem 0.25rem 0.25rem;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+.navigation-shortcode-table tbody .navigation-event-container .event-title {
+  letter-spacing: 0;
+  font-family: var(--title-fonts);
+  color: var(--dark-color);
+  font-weight: 700;
+  text-decoration: none;
+  margin: 0;
+  font-size: 14px;
+  transition: all 0s ease-in-out;
+  transition: all 0s ease-in-out;
+  -moz-transition: all 0s ease-in-out;
+  -ms-transition: all 0s ease-in-out;
+  -o-transition: all 0s ease-in-out;
+  -webkit-transition: all 0s ease-in-out;
+}
+.navigation-inner-event-content {
+  color: var(--white-color);
+}
+.navigation-shortcode-table tbody .navigation-event-container .event-title1 {
+  color: var(--white-color);
+}
+.navigation-shortcode-table tbody .navigation-event-container .event-description,
+.navigation-shortcode-table tbody .navigation-event-container .event-subtitle {
+  font-size: 14px;
+  margin: 5px 0 0;
+  text-transform: uppercase;
+}
+@media (max-width: 1023px) {
+  .navigation-shortcode-table tbody td {
+    padding: 5px 5px !important;
+  }
+  .navigation-shortcode-table tbody .navigation-event-container .event-title,
+  .navigation-shortcode-table tbody .navigation-shortcode-hours {
+    font-size: 12px;
+  }
+  .navigation-shortcode-table tbody .navigation-event-container .event-description,
+  .navigation-shortcode-table tbody .navigation-event-container .event-subtitle {
+    font-size: 14px;
+    margin: 5px 0 0;
+    text-transform: uppercase;
+  }
+}
+@media (max-width: 767px) {
+  .pt-navigation-tab .nav-tabs li a {
+    display: inline-block;
+    padding: 10px 15px;
+    letter-spacing: 0px;
+    font-size: 12px;
+  }
+  .navigation-shortcode-table {
+    max-width: 100vw;
+    overflow-y: scroll;
+    display: block;
+  }
 }
 
 /* Call To Action Section
