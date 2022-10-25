@@ -798,7 +798,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #about::before {
   content: "";
-position: absolute;
+  position: absolute;
   left: 0;
   right: 0;
   top: 0;
@@ -932,7 +932,7 @@ position: absolute;
 --------------------------------*/
 
 #timetable {
-  background: url("../img/about-bg.jpg") center top no-repeat fixed;
+  background: url("../img/intro-carousel/pole2.png") center top no-repeat fixed;
   background-size: cover;
   padding: 60px 0 40px 0;
   position: relative;
@@ -940,7 +940,7 @@ position: absolute;
 
 #timetable::before {
   content: "";
-position: absolute;
+  position: absolute;
   left: 0;
   right: 0;
   top: 0;
