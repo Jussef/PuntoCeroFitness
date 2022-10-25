@@ -219,4 +219,10 @@
     loop: true,
     items: 1,
   });
+
+  $('#botonHorario').click(function() {
+    window.open("https://www.puntocerocentro.com/QR/horariosOCT22.pdf", "_blank");   
+  });
+
+
 })(jQuery);

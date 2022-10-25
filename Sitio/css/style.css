@@ -798,7 +798,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #about::before {
   content: "";
-  position: absolute;
+position: absolute;
   left: 0;
   right: 0;
   top: 0;
@@ -928,122 +928,66 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 0;
 }
 
-/*================================================
-navigation Tabel
-================================================*/
-.navigation-shortcode-table tr.navigation-shortcode-row th {
-  background-color: var(--grey-color);
-  border: 1px solid var(--white-color);
-  text-align: center;
-  color: var(--secondary-color);
-  padding: 0.25rem 1rem;
-  overflow-wrap: normal;
-  -webkit-hyphens: none;
-  -ms-hyphens: none;
-  hyphens: none;
+/* Tabla Horario
+--------------------------------*/
+
+#timetable {
+  background: url("../img/about-bg.jpg") center top no-repeat fixed;
+  background-size: cover;
+  padding: 60px 0 40px 0;
+  position: relative;
 }
 
-.navigation-shortcode-table tr.navigation-shortcode-row th {
-  text-align: center;
-  font-family: var(--title-fonts);
-  font-weight: 400;
-  padding: 15px 0;
-  padding: 15px !important;
-  text-align: center;
-  border: 1px solid rgb(255 255 255 / 0.2);
-  background: var(--white-color);
-  text-transform: uppercase;
-  color: var(--dark-color);
-  background: #f0f0f0;
+#timetable::before {
+  content: "";
+position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.92);
+  z-index: 9;
 }
-.navigation-shortcode-table tbody td,
-.navigation-shortcode-table.navigation-theme-mode tbody td.event {
-  padding: 15px !important;
-  text-align: center;
-  border: 1px solid rgb(189 182 182 / 20%);
-  background: var(--white-color);
-  color: var(--dark-color);
-}
-.navigation-shortcode-wrapper .navigation-shortcode-table tbody td.navigation-shortcode-hours {
-  padding: 0 1rem !important;
-  white-space: nowrap;
-  width: 1%;
-  vertical-align: middle;
-}
-.navigation-shortcode-wrapper .navigation-shortcode-table.navigation-theme-mode tbody td.event {
-  background-color: var(--white-color);
-}
-.navigation-shortcode-table tbody td {
+
+#timetable .container {
   position: relative;
-  border: 1px solid rgb(189 182 182 / 20%);
-  padding: 0;
-  line-height: normal;
-  -webkit-box-sizing: initial;
-  box-sizing: initial;
+  z-index: 10;
 }
-.menu-navigation-tabs td {
-  vertical-align: middle;
+
+#timetable .about-col {
+  background: #fff;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
 }
-.navigation-shortcode-table tbody .navigation-event-container .event-title {
-  display: inline-block;
-  margin: 0.5rem 0.25rem 0.25rem;
-  text-decoration: none;
-  font-size: 1.1em;
+
+.divider {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5rem;
 }
-.navigation-shortcode-table tbody .navigation-event-container .event-title {
-  letter-spacing: 0;
-  font-family: var(--title-fonts);
-  color: var(--dark-color);
-  font-weight: 700;
-  text-decoration: none;
-  margin: 0;
-  font-size: 14px;
-  transition: all 0s ease-in-out;
-  transition: all 0s ease-in-out;
-  -moz-transition: all 0s ease-in-out;
-  -ms-transition: all 0s ease-in-out;
-  -o-transition: all 0s ease-in-out;
-  -webkit-transition: all 0s ease-in-out;
+
+td span {
+  width: 60px;
+  height: 2.5px;
+  background-color: #2bbfcf;
 }
-.navigation-inner-event-content {
-  color: var(--white-color);
+
+td p {
+  font-size: small;
+  margin: 0 0 0 0;
 }
-.navigation-shortcode-table tbody .navigation-event-container .event-title1 {
-  color: var(--white-color);
+
+.table td,
+.table th {
+  vertical-align: inherit;
 }
-.navigation-shortcode-table tbody .navigation-event-container .event-description,
-.navigation-shortcode-table tbody .navigation-event-container .event-subtitle {
-  font-size: 14px;
-  margin: 5px 0 0;
-  text-transform: uppercase;
-}
-@media (max-width: 1023px) {
-  .navigation-shortcode-table tbody td {
-    padding: 5px 5px !important;
-  }
-  .navigation-shortcode-table tbody .navigation-event-container .event-title,
-  .navigation-shortcode-table tbody .navigation-shortcode-hours {
-    font-size: 12px;
-  }
-  .navigation-shortcode-table tbody .navigation-event-container .event-description,
-  .navigation-shortcode-table tbody .navigation-event-container .event-subtitle {
-    font-size: 14px;
-    margin: 5px 0 0;
-    text-transform: uppercase;
-  }
-}
-@media (max-width: 767px) {
-  .pt-navigation-tab .nav-tabs li a {
-    display: inline-block;
-    padding: 10px 15px;
-    letter-spacing: 0px;
-    font-size: 12px;
-  }
-  .navigation-shortcode-table {
-    max-width: 100vw;
-    overflow-y: scroll;
-    display: block;
-  }
+
+.btnHorario {
+  display: none;
 }
 
 /* Call To Action Section
@@ -1842,5 +1786,11 @@ navigation Tabel
 
   #mobile-nav-toggle {
     display: inline;
+  }
+  #tablaHorario {
+    display: none;
+  }
+  .btnHorario {
+    display: block;
   }
 }

@@ -18,7 +18,7 @@
 
     <!-- Bootstrap CSS File -->
     <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-
+    
     <!-- Libraries CSS Files -->
     <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
     <link href="lib/animate/animate.min.css" rel="stylesheet" />
@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
-
+    
     <link href="css/style.css" rel="stylesheet" />
   </head>
 
@@ -43,7 +43,7 @@
             <li class="menu-active"><a href="#intro">Home</a></li>
             <li><a href="#about">Nosotros</a></li>
             <li><a href="#services">Servicios</a></li>
-            <li><a href="#portfolio">Horarios</a></li>
+            <li><a href="#timetable">Horarios</a></li>
             <li><a href="#team">Team</a></li>
             <li class="menu-has-children">
               <a href="">Drop Down</a>
@@ -281,70 +281,111 @@
       <!--==========================
       Horario Section
     ============================-->
-
-      <section class="pt-navigation-tab">
+      <section id="timetable">
         <div class="container">
-          <div class="row">
-            <div class="col-xl-12">
-              <div class="pt-section-title-box text-center">
-                <span class="pt-section-sub-title">TIMETABLE</span>
-                <h2 class="pt-section-title">FIND THE CLASS THAT SUITS YOU</h2>
-                <p class="pt-section-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. the readable content of a page when looking at its layout.</p>
-              </div>
-            </div>
+          <header class="section-header wow fadeInUp">
+            <h3>Horarios</h3>
+            <h2 class="text-center">ENCUENTRA LA CLASE QUE SE ADAPTA A TI</h2>
+            <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus, ad pro quaestio laboramus. Ei ubique vivendum pro. At ius nisl accusam lorenta zanos paradigno tridexa panatarel.</p>
+          </header>
+
+          <div class="row text-center btnHorario">
+            <button id="botonHorario" type="button" class="btn btn-primary center">Descargar Horario</button>
           </div>
 
-          <div class="row">
-            <div class="col-12">
-              <div id="myTabContent">
-                <div role="tabpanel" aria-labelledby="home-tab">
-                  <table class="navigation-shortcode-table navigation-theme-mode" id="#all1" data-hide_empty_row="2">
-                    <thead>
-                      <tr class="navigation-shortcode-row">
-                        <th data-index="0" data-column-id=""></th>
-                        <th data-index="1" data-column-id="56">LUNES</th>
-                        <th data-index="2" data-column-id="57">MARTES</th>
-                        <th data-index="3" data-column-id="58">MIERCOLES</th>
-                        <th data-index="4" data-column-id="59">JUEVES</th>
-                        <th data-index="5" data-column-id="60">VIERNES</th>
-                        <th data-index="6" data-column-id="61">SABADO</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      
-                      <tr>
-                        <td data="8am">
-                          <p>8:00am</p>
-                        </td>
-                        <td data="8am Lunes">
-                          <p>Fitness</p>
-                        </td>
-                        <td data="8am Martes">
-                          <p>Pole</p>
-                          <div class="divider"></div>
-                          <p>Fitness</p>
-                        </td>
-                        <td data="8am Miercoles">
-                          <p>Fitness</p>
-                        </td>
-                        <td data="8am Jueves">
-                          <p>Pole</p>
-                          <div class="divider"></div>
-                          <p>Fitness</p>
-                        </td>
-                        <td data="8am Viernes">
-                          <p>Fitness</p>
-                        </td>
-                        <td data="8am Sabado">
-                          <p></p>
-                        </td>
-                      </tr>
-
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
+          <div id="tablaHorario" class="row">
+            <table class="table table-bordered text-center">
+              <thead>
+                <tr>
+                  <th scope="col">Hora</th>
+                  <th scope="col">Lunes</th>
+                  <th scope="col">Martes</th>
+                  <th scope="col">Miercoles</th>
+                  <th scope="col">Jueves</th>
+                  <th scope="col">Viernes</th>
+                  <th scope="col">Sabado</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">8:00am</th>
+                  <td>Fitness</td>
+                  <td><div class="divider"> Fitness <span>&nbsp;</span> Pole</div></td>
+                  <td>Fitness</td>
+                  <td><div class="divider"> Fitness <span>&nbsp;</span> Pole</div></td>
+                  <td>Fitness</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">9:00am</th>
+                  <td><div class="divider"> Pole <span>&nbsp;</span> Conciencia <p class="minitext">mente cuerpo</p></div></td>
+                  <td>Yoga</td>
+                  <td>Flex</td>
+                  <td>Yoga</td>
+                  <td><div class="divider"> Pole <span>&nbsp;</span> Conciencia <p class="minitext">mente cuerpo</p></div></td>
+                  <td>Pole</td>
+                </tr>
+                <tr>
+                  <th scope="row">10:00am</th>
+                  <td>Pole</td>
+                  <td>Pole</td>
+                  <td><div class="divider"> Pole <span>&nbsp;</span> Bases Acro</div></td>
+                  <td>Pole</td>
+                  <td>Pole</td>
+                  <td>Aereo</td>
+                </tr>
+                <tr>
+                  <th scope="row">11:00am</th>
+                  <td>Flex</td>
+                  <td>Flex</td>
+                  <td><div class="divider"> Conciencia <p class="minitext">mente cuerpo</p></div></td>
+                  <td>Flex</td>
+                  <td>Flex</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">5:00pm</th>
+                  <td>Aereo Kids</td>
+                  <td>Aereo Kids</td>
+                  <td>Aereo Kids</td>
+                  <td>Aereo Kids</td>
+                  <td colspan="2"></td>
+                </tr>
+                <tr>
+                  <th scope="row">6:00pm</th>
+                  <td><div class="divider"> Arqueria <span>&nbsp;</span> Aereo</div></td>
+                  <td><div class="divider"> Aereo <span>&nbsp;</span> Flex</div></td>
+                  <td>Aereo</td>
+                  <td><div class="divider"> Aereo <span>&nbsp;</span> Flex</div></td>
+                  <td colspan="2"></td>
+                </tr>
+                <tr>
+                  <th scope="row">7:00pm</th>
+                  <td><div class="divider"> Aereo <span>&nbsp;</span> Pole <span>&nbsp;</span> Defensa Personal <span>&nbsp;</span> Twerk</div></td>
+                  <td><div class="divider"> Pole <span>&nbsp;</span> Twerk <span>&nbsp;</span> Aereo</div></td>
+                  <td><div class="divider"> Pole <span>&nbsp;</span> Twerk <span>&nbsp;</span> Aereo</div></td>
+                  <td><div class="divider"> Pole <span>&nbsp;</span> Twerk <span>&nbsp;</span> Aereo</div></td>
+                  <td>Pole</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">8:00pm</th>
+                  <td><div class="divider"> Salsa <span>&nbsp;</span> Exotic <span>&nbsp;</span> Jiujitsu <span>&nbsp;</span> Flex</div></td>
+                  <td><div class="divider"> Afro <span>&nbsp;</span> Capoeira <span>&nbsp;</span> Pole</div></td>
+                  <td><div class="divider"> Salsa <span>&nbsp;</span> Jiujitsu <span>&nbsp;</span> Pole</div></td>
+                  <td><div class="divider"> Afro <span>&nbsp;</span> Capoeira</div></td>
+                  <td><div class="divider"> Salsa <span>&nbsp;</span> Exotic <span>&nbsp;</span> Jiujitsu</div></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th scope="row">9:00pm</th>
+                  <td></td>
+                  <td>Bachata</td>
+                  <td></td>
+                  <td>Bachata</td>
+                  <td colspan="2"></td>
+                </tr>
+              </tbody>
           </div>
         </div>
       </section>
