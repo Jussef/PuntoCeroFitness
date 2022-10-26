@@ -82,7 +82,6 @@
       $("#header").addClass("header-scrolled");
       $("#logo").addClass("logoInicio");
       $("#cajalogo").addClass("cajalogochica");
-      console.log("sss");
     } else {
       $("#header").removeClass("header-scrolled");
       $("#logo").removeClass("logoInicio");

@@ -14,9 +14,9 @@ Moz Selection
 ================================================*/
 :root {
   --primary-color: #2bbfcf;
-  --dark-color: #111111;
-  --secondary-color: #777777;
-  --grey-color: #eeeeee;
+  --dark-color: #1c348b;
+  --secondary-color: #7d9cef;
+  --grey-color: #282525;
   --white-color: #ffffff;
   --body-fonts: "Poppins", sans-serif;
   --title-fonts: "Montserrat", sans-serif;
@@ -57,7 +57,7 @@ h4,
 h5,
 h6 {
   font-family: var(--title-fonts);
-  color: var(--dark-color);
+  color: var(--grey-color);
   font-style: normal;
   text-transform: uppercase;
   font-weight: 800;
@@ -116,7 +116,7 @@ body {
 }
 
 a {
-  color: #2bbfcf;
+  color: #ffffff;
   transition: 0.5s;
 }
 
@@ -984,6 +984,15 @@ td p {
 .table td,
 .table th {
   vertical-align: inherit;
+  padding: 0.15rem;
+}
+
+.table thead th {
+  border-bottom: 2px solid #868282;
+}
+.table-bordered td,
+.table-bordered th {
+  border: 1px solid #1c348b81;
 }
 
 .btnHorario {
@@ -993,8 +1002,12 @@ td p {
 /* Call To Action Section
 --------------------------------*/
 
+.btnWhatsApp {
+  width: 20px;
+}
+
 #call-to-action {
-  background: linear-gradient(rgba(0, 142, 99, 0.1), rgba(0, 0, 0, 0.1)), url(../img/call-to-action-bg.jpg) fixed center center;
+  background: linear-gradient(rgb(0 255 178 / 25%), rgb(0 0 0 / 72%)), url(../img/call-to-action-bg.jpg) fixed center center;
   background-size: cover;
   padding: 60px 0;
 }
@@ -1208,8 +1221,9 @@ td p {
 }
 
 #portfolio .portfolio-item figure .link-preview {
-  left: calc(50% - 38px);
-  top: calc(50% - 18px);
+  /* TODO Cambiar a left 58 si queremos los dos botones */
+  left: calc(50% - 18px);
+  top: calc(50% - 38px);
 }
 
 #portfolio .portfolio-item figure .link-details {
@@ -1219,7 +1233,8 @@ td p {
 
 #portfolio .portfolio-item figure:hover .link-preview {
   opacity: 1;
-  left: calc(50% - 44px);
+  /* left: calc(50% - 44px); */
+  top: calc(50% - 18px);
 }
 
 #portfolio .portfolio-item figure:hover .link-details {
@@ -1459,6 +1474,16 @@ td p {
 /* Contact Section
 --------------------------------*/
 
+.mapa {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.mapaGoogle {
+  border: 1px solid #2bbfcf;
+  border-radius: 10px;
+}
+
 #contact {
   padding: 60px 0;
 }
@@ -1561,6 +1586,11 @@ td p {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
+
+.logoFooter{
+  width: 240px;
+  margin-bottom: 40px;
+}
 
 #footer {
   background: #000;
