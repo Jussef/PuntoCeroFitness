@@ -20,7 +20,7 @@
       $(".back-to-top").fadeOut("slow");
     }
   });
-  $(".back-to-top").click(function () {
+  $("#back-to-top1").click(function () {
     $("html, body").animate({ scrollTop: 0 }, 1500, "easeInOutExpo");
     return false;
   });
